@@ -1,3 +1,4 @@
 <div class="header-node-container">
-  <a href="{{nodeInfo.nodeUrl}}">{{nodeInfo.nodeLabelName}}</a>
+  <a *ngIf="nodeInfo.nodeUrl" href="{{nodeInfo.nodeUrl}}">{{nodeInfo.nodeLabelName}}</a>
+  <span *ngIf="!nodeInfo.nodeUrl">{{nodeInfo.nodeLabelName}}</span>
 </div>

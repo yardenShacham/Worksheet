@@ -14,8 +14,14 @@ export class AppComponent implements OnInit {
     nodeUrl: '/',
     nodeLabelName: 'Home'
   }, {
-    nodeUrl: 'https://www.google.com',
-    nodeLabelName: 'Google'
+    nodeUrl: 'https://github.com/yardenShacham',
+    nodeLabelName: 'Github Repository'
+  }, {
+    nodeUrl: 'https://il.linkedin.com/in/yarden-shcham-087163b3',
+    nodeLabelName: 'Linkedin'
+  }, {
+    nodeUrl: null,
+    nodeLabelName: 'yarden101111@gmail.com'
   }];
 
   ngOnInit() {

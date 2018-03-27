@@ -39,7 +39,11 @@
     "@ngrx/router-store": "5.0.1",
     "@ngrx/store": "5.1.0",
     "@ngrx/store-devtools": "5.1.0",
-    "ngrx-store-freeze": "^0.2.1"
+    "ngrx-store-freeze": "^0.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "moment": "^2.21.0",
+    "rc-design": "^1.0.2"
   },
   "devDependencies": {
     "@angular/cli": "1.7.1",
@@ -47,6 +51,7 @@
     "@nrwl/schematics": "0.9.1",
     "@angular/language-service": "5.2.6",
     "@types/jasmine": "~2.8.3",
+    "@types/moment": "^2.13.0",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
