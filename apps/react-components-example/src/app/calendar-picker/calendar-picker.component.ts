@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as moment from 'moment';
 import * as ReactDom from 'react-dom';
-import * as RcDesign from 'rc-design';
+import {DatePicker} from 'rc-design';
 import {Component, OnInit} from '@angular/core';
 
 @Component({
@@ -20,7 +20,7 @@ export class CalendarPickerComponent implements OnInit {
 
   ngOnInit() {
     ReactDom.render(
-      React.createElement(RcDesign.DatePicker,
+      React.createElement(DatePicker,
         {isDateDisable: (date) => this.isPastDay(date)}, null)
       , document.getElementById('calendar-angular-container'));
   }
