@@ -1,4 +1,5 @@
 export interface IHeaderNode {
-  nodeLabelName: string;
-  nodeUrl: string
+  nodeLabelName?: string;
+  nodeUrl?: string
+  imageUrl?: string
 };

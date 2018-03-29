@@ -6,6 +6,7 @@ import {RouterModule} from '@angular/router';
 import {SharedModule} from '@Worksheet/shared';
 import {Routes} from './app.routes';
 import {CalendarPickerComponent} from './calendar-picker/calendar-picker.component';
+import {CalendarRangePickerComponent} from './calendar-range-picker/calendar-range-picker.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,11 @@ import {CalendarPickerComponent} from './calendar-picker/calendar-picker.compone
     NxModule.forRoot(),
     RouterModule.forRoot(Routes, {initialNavigation: 'enabled'})
   ],
-  declarations: [AppComponent, CalendarPickerComponent, ...Routes.map(r => r.component)],
+  declarations: [
+    AppComponent,
+    CalendarPickerComponent,
+    CalendarRangePickerComponent, ...Routes.map(r => r.component)
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

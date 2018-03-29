@@ -1,4 +1,8 @@
 <div class="header-node-container">
-  <a *ngIf="nodeInfo.nodeUrl" href="{{nodeInfo.nodeUrl}}">{{nodeInfo.nodeLabelName}}</a>
+  <a *ngIf="nodeInfo.nodeUrl" href="{{nodeInfo.nodeUrl}}">
+    <img *ngIf="nodeInfo.imageUrl" class="header-icon" src="{{nodeInfo.imageUrl}}"/>
+    <span *ngIf="nodeInfo.nodeLabelName">{{nodeInfo.nodeLabelName}}</span>
+  </a>
   <span *ngIf="!nodeInfo.nodeUrl">{{nodeInfo.nodeLabelName}}</span>
 </div>
+

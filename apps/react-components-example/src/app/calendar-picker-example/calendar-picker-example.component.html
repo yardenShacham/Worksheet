@@ -1,10 +1,19 @@
-<div class="form-container">
-  <div class="label-input-container ">
-    <span>Start Date</span>
-    <app-calendar-picker key="1"></app-calendar-picker>
-  </div>
-  <div class="label-input-container ">
-    <span>End Date</span>
-    <app-calendar-picker key="2"></app-calendar-picker>
+<div class="component-conatiner">
+  <div class="form-container">
+    <div class="inputs-container">
+      <div class="label-input-container ">
+        <span>Start Date</span>
+        <app-calendar-picker key="1" (dateChange)="onStartDateChanged($event)"></app-calendar-picker>
+      </div>
+      <div class="label-input-container ">
+        <span>End Date</span>
+        <app-calendar-picker key="2" (dateChange)="onEndDateChanged($event)"></app-calendar-picker>
+      </div>
+    </div>
+    <div class="result-container">
+      <span>{{selectedStartDate ? selectedStartDate.format(dateFormat) : 'Start Date'}}</span>
+      <span> - </span>
+      <span>{{selectedEndDate ? selectedEndDate.format(dateFormat): 'End Date'}} </span>
+    </div>
   </div>
 </div>

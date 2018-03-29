@@ -12,6 +12,9 @@ export class AppComponent implements OnInit {
 
   headerNodes: IHeaderNode[] = [{
     nodeUrl: '/',
+    imageUrl: 'assets/icon.jpg'
+  },{
+    nodeUrl: '/',
     nodeLabelName: 'Home'
   }, {
     nodeUrl: 'https://github.com/yardenShacham',
