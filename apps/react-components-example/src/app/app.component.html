@@ -1,4 +1,9 @@
 <app-header [headerNodes]="headerNodes"></app-header>
-<app-calendar-picker></app-calendar-picker>
+<div class="component-navigation-container">
+  <div routerLink="/calendar-picker" class="component-navigation">Calendar Picker</div>
+  <div routerLink="/calendarRange-picker" class="component-navigation">Calendar Range Picker</div>
+</div>
 
-<router-outlet></router-outlet>
+<div class="component-conatiner">
+  <router-outlet></router-outlet>
+</div>

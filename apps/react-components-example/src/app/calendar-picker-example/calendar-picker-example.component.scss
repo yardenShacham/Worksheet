@@ -1,0 +1,14 @@
+.form-container {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  .label-input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    align-items: center;
+    span{
+      margin-right: 10px;
+    }
+  }
+}

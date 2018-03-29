@@ -4,16 +4,17 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NxModule} from '@nrwl/nx';
 import {RouterModule} from '@angular/router';
 import {SharedModule} from '@Worksheet/shared';
-import { CalendarPickerComponent } from './calendar-picker/calendar-picker.component'
+import {Routes} from './app.routes';
+import {CalendarPickerComponent} from './calendar-picker/calendar-picker.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     SharedModule,
     NxModule.forRoot(),
-    RouterModule.forRoot([], {initialNavigation: 'enabled'})
+    RouterModule.forRoot(Routes, {initialNavigation: 'enabled'})
   ],
-  declarations: [AppComponent, CalendarPickerComponent],
+  declarations: [AppComponent, CalendarPickerComponent, ...Routes.map(r => r.component)],
   bootstrap: [AppComponent]
 })
 export class AppModule {
