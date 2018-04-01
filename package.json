@@ -19,7 +19,8 @@
     "update:check": "./node_modules/.bin/nx update check",
     "update:skip": "./node_modules/.bin/nx update skip",
     "postinstall": "./node_modules/.bin/nx postinstall",
-    "startrce": "ng serve --app=react-components-example"
+    "startrce": "ng serve --app=react-components-example",
+    "buildrce": "ng build --prod -a=react-components-example"
   },
   "private": true,
   "dependencies": {
