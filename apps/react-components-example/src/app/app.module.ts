@@ -7,6 +7,8 @@ import {SharedModule} from '@Worksheet/shared';
 import {Routes} from './app.routes';
 import {CalendarPickerComponent} from './calendar-picker/calendar-picker.component';
 import {CalendarRangePickerComponent} from './calendar-range-picker/calendar-range-picker.component';
+import {CalendarPickerExampleComponent} from './calendar-picker-example/calendar-picker-example.component'
+import {CalendarRangePickerExampleComponent} from './calendar-range-picker-example/calendar-range-picker-example.component';
 
 @NgModule({
   imports: [
@@ -18,7 +20,9 @@ import {CalendarRangePickerComponent} from './calendar-range-picker/calendar-ran
   declarations: [
     AppComponent,
     CalendarPickerComponent,
-    CalendarRangePickerComponent, ...Routes.map(r => r.component)
+    CalendarRangePickerComponent,
+    CalendarPickerExampleComponent,
+    CalendarRangePickerExampleComponent
   ],
   bootstrap: [AppComponent]
 })
