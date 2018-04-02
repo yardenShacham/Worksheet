@@ -6,12 +6,13 @@ describe('HeaderNodeComponent', () => {
   let component: HeaderNodeComponent;
   let fixture: ComponentFixture<HeaderNodeComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ HeaderNodeComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [HeaderNodeComponent]
+      }).compileComponents();
     })
-    .compileComponents();
-  }));
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(HeaderNodeComponent);

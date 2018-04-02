@@ -1,5 +1,10 @@
-import {Component, OnInit, Input, ChangeDetectionStrategy} from '@angular/core';
-import {IHeaderNode} from '@Worksheet/shared-models';
+import {
+  Component,
+  OnInit,
+  Input,
+  ChangeDetectionStrategy
+} from '@angular/core';
+import { IHeaderNode } from '@Worksheet/shared-models';
 
 @Component({
   selector: 'app-header',
@@ -8,13 +13,9 @@ import {IHeaderNode} from '@Worksheet/shared-models';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent implements OnInit {
-  @Input() headerNodes: IHeaderNode[]
+  @Input() headerNodes: IHeaderNode[];
 
-  constructor() {
-  }
+  constructor() {}
 
-  ngOnInit() {
-
-  }
-
+  ngOnInit() {}
 }

@@ -6,12 +6,13 @@ describe('CalendarPickerExampleComponent', () => {
   let component: CalendarPickerExampleComponent;
   let fixture: ComponentFixture<CalendarPickerExampleComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ CalendarPickerExampleComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [CalendarPickerExampleComponent]
+      }).compileComponents();
     })
-    .compileComponents();
-  }));
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(CalendarPickerExampleComponent);

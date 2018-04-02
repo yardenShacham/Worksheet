@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {IHeaderNode} from '@Worksheet/shared-models';
+import {getNavigationOptions} from './app-navigation';
 
 @Component({
   selector: 'app-root',
@@ -10,23 +11,9 @@ export class AppComponent implements OnInit {
   constructor() {
   }
 
-  headerNodes: IHeaderNode[] = [{
-    nodeUrl: '/',
-    imageUrl: 'assets/icon.jpg'
-  },{
-    nodeUrl: '/',
-    nodeLabelName: 'Home'
-  }, {
-    nodeUrl: 'https://github.com/yardenShacham',
-    nodeLabelName: 'Github Repository'
-  }, {
-    nodeUrl: 'https://il.linkedin.com/in/yarden-shcham-087163b3',
-    nodeLabelName: 'Linkedin'
-  }, {
-    nodeUrl: null,
-    nodeLabelName: 'yarden101111@gmail.com'
-  }];
+  headerNodes: IHeaderNode[] = [];
 
   ngOnInit() {
+    this.headerNodes = getNavigationOptions();
   }
 }

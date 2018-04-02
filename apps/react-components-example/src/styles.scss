@@ -1,11 +1,21 @@
+body {
+  margin: 0;
+}
+
+
+@import "assets/icons.css";
 @import "~rc-design/rc-design.css";
 
+
 .component-conatiner {
+  flex: 1;
   padding: 10px;
+  margin: 10px;
   border: 2px solid blue;
   border-radius: 10px;
+  min-height: 75vh;
   background-color: cornflowerblue;
-  min-height: 100px;
+
 }
 
 #calendar-angular-container-1 {

@@ -1,5 +1,5 @@
-import {Component, OnInit, Input} from '@angular/core';
-import {IHeaderNode} from '@Worksheet/shared-models';
+import { Component, OnInit, Input } from '@angular/core';
+import { IHeaderNode } from '@Worksheet/shared-models';
 
 @Component({
   selector: 'app-header-node',
@@ -7,13 +7,9 @@ import {IHeaderNode} from '@Worksheet/shared-models';
   styleUrls: ['./header-node.component.scss']
 })
 export class HeaderNodeComponent implements OnInit {
-  @Input() nodeInfo: IHeaderNode
+  @Input() nodeInfo: IHeaderNode;
 
-  constructor() {
-  }
+  constructor() {}
 
-  ngOnInit() {
-
-  }
-
+  ngOnInit() {}
 }

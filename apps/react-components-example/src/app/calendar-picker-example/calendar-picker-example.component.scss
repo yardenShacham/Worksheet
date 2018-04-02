@@ -4,8 +4,7 @@
   font-size: 25px;
   font-weight: bold;
   .inputs-container {
-    flex: 50%;
-    margin-right: 100px;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     .label-input-container {
@@ -19,16 +18,30 @@
     }
   }
   .result-container {
-    flex: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
-    margin-right: 100px;
-    min-width: 300px;
+    min-width: 400px;
     min-height: 120px;
     font-size: 30px;
     font-weight: bold;
     color: white;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .form-container {
+    flex-direction: column;
+    .inputs-container {
+      width: auto;
+      flex-direction: column;
+      .label-input-container {
+        margin-bottom: 20px;
+      }
+    }
+    .result-container {
+      min-width: 400px;
+    }
   }
 }

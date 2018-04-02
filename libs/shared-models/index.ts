@@ -1,1 +1,1 @@
-export {IHeaderNode} from './src/shared-models';
+export { IHeaderNode } from './src/shared-models';

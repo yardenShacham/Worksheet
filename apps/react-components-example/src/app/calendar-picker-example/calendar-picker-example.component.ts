@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-calendar-picker-example',
@@ -6,13 +6,11 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./calendar-picker-example.component.scss']
 })
 export class CalendarPickerExampleComponent implements OnInit {
-
-  constructor() {
-  }
+  constructor() {}
 
   selectedStartDate;
   selectedEndDate;
-  dateFormat = "YYYY-MM-DD";
+  dateFormat = 'YYYY-MM-DD';
 
   onStartDateChanged(date) {
     this.selectedStartDate = date;
@@ -22,7 +20,5 @@ export class CalendarPickerExampleComponent implements OnInit {
     this.selectedEndDate = date;
   }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
