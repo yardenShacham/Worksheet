@@ -39,7 +39,7 @@ const nvigationOptionMobile: IHeaderNode[] = [
   },
   {
     nodeUrl: 'https://il.linkedin.com/in/yarden-shcham-087163b3',
-    iconClassName: 'icon-gmail'
+    iconClassName: 'icon-mail'
   }
 ];
 

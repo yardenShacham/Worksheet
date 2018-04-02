@@ -4,7 +4,7 @@
   font-size: 25px;
   font-weight: bold;
   .inputs-container {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     .label-input-container {
@@ -30,7 +30,7 @@
   }
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 530px) {
   .form-container {
     flex-direction: column;
     .inputs-container {
@@ -41,7 +41,7 @@
       }
     }
     .result-container {
-      min-width: 400px;
+      min-width: 300px;
     }
   }
 }
