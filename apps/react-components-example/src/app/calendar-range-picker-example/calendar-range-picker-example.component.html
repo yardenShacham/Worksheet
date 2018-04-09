@@ -1,3 +1,14 @@
 <div class="component-conatiner">
-  <span>Not Fully implemented</span>
+  <div class="form-container">
+    <div class="inputs-container">
+      <app-calendar-range-picker key="1"
+                                 (dateRangeChange)="onDateRangeChanged($event)">
+      </app-calendar-range-picker>
+    </div>
+    <div class="result-container">
+      <span>{{selectedDateRange ? selectedDateRange.from && selectedDateRange.from.format(dateFormat) : 'Start Date'}}</span>
+      <span> - </span>
+      <span>{{selectedDateRange ? selectedDateRange.to && selectedDateRange.to.format(dateFormat): 'End Date'}} </span>
+    </div>
+  </div>
 </div>

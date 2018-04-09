@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-calendar-range-picker-example',
@@ -6,7 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calendar-range-picker-example.component.scss']
 })
 export class CalendarRangePickerExampleComponent implements OnInit {
-  constructor() {}
+  constructor() {
+  }
 
-  ngOnInit() {}
+  selectedDateRange;
+  dateFormat = 'YYYY-MM-DD';
+
+  onDateRangeChanged(selectedDateRange) {
+    this.selectedDateRange = selectedDateRange
+  }
+
+  ngOnInit() {
+  }
 }

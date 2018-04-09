@@ -44,7 +44,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "moment": "^2.21.0",
-    "rc-design": "^1.0.8"
+    "rc-design": "^1.0.9"
   },
   "devDependencies": {
     "@angular/cli": "1.7.1",
